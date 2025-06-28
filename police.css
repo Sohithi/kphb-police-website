@@ -1,0 +1,385 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #002244;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: #516b16;
+}
+
+.idea {
+    color: rgb(240, 241, 233);
+    border-width: 20px;
+    border-left-style: outset;
+    width: fit-content;
+    height: fit-content;
+    border: #516b16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: wavy;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.idea-content {
+    background-image: url('images/ps.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 250px;
+}
+
+h2 {
+    background-color: rgb(2, 26, 49);
+    font-size: x-large;
+    background-attachment: fixed;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    /* background-color: rgb(2, 26, 49); */
+/* text-align: center;
+    background-color: transparent;
+    color: rgb(239, 233, 230);
+    border-radius: 1%;
+    font-style: oblique;
+    margin: 5px;
+    scroll-margin-left: 5px;
+
+}
+
+.idea-card {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-signup {
+    display: inline-block;
+    background-color: white;
+    color: solid blue;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.btn-signup:hover {
+    background: #fcf5f5;
+    color: rgb(175, 157, 133);
+    transform: 0.3s;
+    box-shadow: #002244;
+
+} */
+
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #3c69c3;
+    color: #111;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background-color: #002244;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffc107;
+}
+
+.nav-btn {
+    padding: 8px 15px;
+    background-color: #ffc107;
+    color: #002244;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    /* background: url('images/ps.jpg') no-repeat center center/cover; */
+    background-color: khaki;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn.primary {
+    background-color: #ffc107;
+    padding: 10px 25px;
+    color: #002244;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.btn.primary:hover {
+    background-color: #e0a800;
+}
+
+/* Idea Section */
+.idea {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.idea-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.idea h2 {
+    font-size: 2rem;
+    color: #002244;
+    margin-bottom: 20px;
+}
+
+.idea p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.btn.secondary {
+    background-color: #002244;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn.secondary:hover {
+    background-color: #001a33;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #edf3f8;
+    color: #f8f9fa;
+}
+
+.features h2 {
+    /* font-size: 2rem;
+    color: #002244;
+    margin-bottom: 40px; */
+    font-size: 2.2rem;
+    color: #ffc107;
+    /* police yellow */
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.ps-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color: #343a40;
+    /* deep gray card */
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    color: khaki;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.team-section {
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    color: #002244;
+    margin-bottom: 40px;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-member {
+    background-color: white;
+    padding: 25px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.team-member h3 {
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* learnmore.html */
+.feedback-section,
+.crime-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.feedback-section h2,
+.crime-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #002244;
+}
+
+.feedback-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.feedback-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.feedback-card span {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    color: #555;
+}
+
+.crime-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.crime-list li {
+    background-color: #ffffff;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-left: 5px solid #dc3545;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    color: #333;
+}
